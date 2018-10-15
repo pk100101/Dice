@@ -12,15 +12,16 @@ public class DiceMain {
 		Dice dice2 = new Dice();
 		int dice1Val= dice1.roll();
 		int dice2Val= dice2.roll();
-		while (dice1Val != dice2Val);
-		int numRolls=0;
+		System.out.println("Die 1 rolled a: " + dice1Val + "\tDie 2 rolled a: " + dice2Val);
+		System.out.println();
+		int numRolls=1;
+		
+		while (dice1Val != dice2Val);		
 			{
-				 dice1.roll();
-				 dice2.roll();
-				 System.out.println("You rolled a: " + dice1Val);
-				 System.out.println("You rolled a: " + dice2Val);
-				 numRolls++;
-				 System.out.println("Total rolls: " + numRolls);
+				int dice1Val= dice1.roll();
+				int dice2Val= dice2.roll();
+				System.out.println("Die 1 rolled a: " + dice1Val + "\tDie 2 rolled a: " + dice2Val);
+				numRolls++;
 			 }
 			 	
 			System.out.println("It took " + numRolls + "to get a double");
